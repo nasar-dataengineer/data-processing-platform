@@ -1,10 +1,10 @@
 # Data Processing Platform
 
-A web-based data processing application for uploading, exploring, cleaning, transforming, and exporting structured data.
+A full-stack web-based data processing application for uploading, exploring, cleaning, transforming, visualizing, and exporting structured datasets.
 
 ## Overview
 
-Data Processing Platform helps users prepare datasets through a simple web interface. It supports multiple file formats and provides preprocessing tools for improving data quality.
+Data Processing Platform helps users prepare datasets through a simple web interface. It supports multiple file formats and provides preprocessing tools to improve data quality.
 
 ## Features
 
@@ -39,20 +39,22 @@ Data Processing Platform helps users prepare datasets through a simple web inter
 
 ## Screenshots
 
-Add screenshots to `docs/screenshots/` and use these image paths:
+### Main Dashboard
+
+![Data Processing Platform Dashboard](docs/screenshots/dashboard.png)
+
+More screenshots can be added to `docs/screenshots/`:
 
 | Screenshot | File |
 |---|---|
-| Main dashboard | `dashboard.png` |
 | File upload and preview | `file-upload.png` |
 | Preprocessing interface | `preprocessing.png` |
 | Data visualization | `visualization.png` |
 
-![Dashboard](docs/screenshots/dashboard.png)
-
 ## Getting Started
 
 ### Prerequisites
+
 - Python
 - Node.js and npm
 
@@ -77,7 +79,7 @@ python -m uvicorn backend.main:app --reload
 
 Backend API: `http://127.0.0.1:8000`
 
-### 4. Install frontend dependencies
+### 4. Install and start the frontend
 
 Open another terminal in the project directory:
 
@@ -92,7 +94,7 @@ The frontend uses `http://127.0.0.1:8000` as its default API address. Set `VITE_
 
 ## Tests
 
-Run the backend file-format and preprocessing tests:
+Run the backend file-format tests:
 
 ```bash
 python -m unittest backend.tests.test_file_formats
@@ -110,6 +112,9 @@ data-processing-platform/
 │   ├── main.py
 │   ├── preprocessing.py
 │   └── requirements.txt
+├── docs/
+│   └── screenshots/
+│       └── dashboard.png
 ├── public/
 ├── src/
 │   ├── assets/
@@ -124,7 +129,7 @@ data-processing-platform/
 
 ## Project Status
 
-The application has a working backend and frontend development setup, with backend tests and a production frontend build verified.
+The application has a working backend and frontend development setup. Backend tests and a production frontend build have been verified.
 
 ## Author
 
